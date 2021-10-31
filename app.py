@@ -41,10 +41,10 @@ def main():
 #           min = notnull.min()
 #           dataframe[i].replace(np.nan, min, inplace=True)
 
-      scaler = StandardScaler()
-      scaler.fit(dataframe)
-      featureshost = scaler.transform(dataframe)
-      prediction = model.predict(featureshost)
+#       scaler = StandardScaler()
+#       scaler.fit(dataframe)
+#       featureshost = scaler.transform(dataframe)
+      prediction = model.predict(dataframe)
 
       result = prediction
       st.write(result)
